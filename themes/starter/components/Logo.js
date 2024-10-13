@@ -13,7 +13,7 @@ import { useEffect, useState } from 'react'
 export const Logo = ({ white }) => {
   const router = useRouter()
   const { isDarkMode } = useGlobal()
-  const logoWhite = siteConfig('STARTER_LOGO_WHITE')
+  const logoWhite = '/images/starter/brands/graygrids-white.svg'
   const [logo, setLogo] = useState(logoWhite)
   const [logoTextColor, setLogoTextColor] = useState('text-white')
 
@@ -25,10 +25,10 @@ export const Logo = ({ white }) => {
       // 何时显示浅色或白底的logo
       const homePageNavBar = router.route === '/' && scrollY < 10 // 在首页并且视窗在页面顶部
       if (white || isDarkMode || homePageNavBar) {
-        setLogo(siteConfig('STARTER_LOGO_WHITE'))
+        setLogo('/images/starter/brands/graygrids-white.svg')
         setLogoTextColor('text-white')
       } else {
-        setLogo(siteConfig('STARTER_LOGO'))
+        setLogo('/images/starter/testimonials/icon-star.svg')
         setLogoTextColor('text-black')
       }
     }, throttleMs)
