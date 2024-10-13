@@ -44,17 +44,7 @@ export const Logo = ({ white }) => {
     <div className='w-60 max-w-full px-4'>
       <div className='navbar-logo flex items-center w-full py-5 cursor-pointer'>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        // {logo && (
-        //   <img
-        //     onClick={() => {
-        //       router.push('/')
-        //     }}
-        //     src={logo}
-        //     alt='logo'
-        //     className='header-logo w-full'
-        //   />
-        // )}
-        {
+        {logo && (
           <img
             onClick={() => {
               router.push('/')
@@ -63,7 +53,17 @@ export const Logo = ({ white }) => {
             alt='logo'
             className='header-logo w-full'
           />
-        }
+        )}
+        // {
+        //   <img
+        //     onClick={() => {
+        //       router.push('/')
+        //     }}
+        //     src={logo}
+        //     alt='logo'
+        //     className='header-logo w-full'
+        //   />
+        // }
         {/* logo文字 */}
         <span
           onClick={() => {
