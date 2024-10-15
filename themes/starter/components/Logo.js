@@ -13,7 +13,7 @@ import { useEffect, useState } from 'react'
 export const Logo = ({ white }) => {
   const router = useRouter()
   const { isDarkMode } = useGlobal()
-  const logoWhite = '/images/starter/logo/ckyf_logo.svg'
+  const logoWhite = '/images/starter/logo/ckyf.svg'
   const [logo, setLogo] = useState(logoWhite)
   const [logoTextColor, setLogoTextColor] = useState('text-white')
 
