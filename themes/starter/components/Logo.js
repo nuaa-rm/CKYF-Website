@@ -28,7 +28,7 @@ export const Logo = ({ white }) => {
         setLogo('/images/starter/logo/ckyf_.svg')
         setLogoTextColor('text-white')
       } else {
-        setLogo('/images/starter/testimonials/icon-star.svg')
+        setLogo('/images/starter/logo/ckyf_white.svg')
         setLogoTextColor('text-black')
       }
     }, throttleMs)
