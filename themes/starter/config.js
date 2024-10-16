@@ -9,7 +9,7 @@ const CONFIG = {
   // MENU ， 菜单部分不在此处配置，请在Notion数据库中添加MENU
 
   // 英雄区块导航
-  STARTER_HERO_ENABLE: false, // 开启英雄区
+  STARTER_HERO_ENABLE: true, // 开启英雄区
   STARTER_HERO_TITLE_1: '长空无界，御风无疆', // 英雄区文字
   STARTER_HERO_TITLE_2: '通过笔记无感知地建站、成倍放大您的价值', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
@@ -23,11 +23,11 @@ const CONFIG = {
   STARTER_HERO_PREVIEW_IMAGE: '/images/starter/hero/hero-image.webp', // 产品预览图 ，默认读取public目录下图片
 
   // 顶部右侧导航暗流
-  //STARTER_NAV_BUTTON_1_TEXT: '',//    Sign In
-  //STARTER_NAV_BUTTON_1_URL: '',//    /sign-in
+  STARTER_NAV_BUTTON_1_TEXT: 'Sign In',//    Sign In
+  STARTER_NAV_BUTTON_1_URL: '/sign-in',//    /sign-in
 
-  //STARTER_NAV_BUTTON_2_TEXT: '',//    Sign Up
-  //STARTER_NAV_BUTTON_2_URL: '',//     /sign-up
+  STARTER_NAV_BUTTON_2_TEXT: 'Sign Up',//    Sign Up
+  STARTER_NAV_BUTTON_2_URL: '/sign-up',//     /sign-up
 
   // 特性区块
   STARTER_FEATURE_ENABLE: true, // 特性区块开关
