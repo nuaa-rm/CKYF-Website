@@ -13,9 +13,9 @@ const CONFIG = {
   STARTER_HERO_TITLE_1: '长空无界，御风无疆', // 英雄区文字
   STARTER_HERO_TITLE_2: '工程师的梦想，从这里启航！', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
-  STARTER_HERO_BUTTON_1_TEXT: '了解我们', // 英雄区按钮
+  STARTER_HERO_BUTTON_1_TEXT: '', // 英雄区按钮
   STARTER_HERO_BUTTON_1_URL:
-    'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
+    ' ', // 英雄区按钮
   STARTER_HERO_BUTTON_2_TEXT: '在Bilibili上关注', // 英雄区按钮
   STARTER_HERO_BUTTON_2_URL: 'https://space.bilibili.com/22993364?spm_id_from=333.337.search-card.all.click', // 英雄区按钮
   STARTER_HERO_BUTTON_2_ICON: '/images/starter/bilibili.svg', // 英雄区按钮2的图标，不需要则留空 /images/starter/github.svg
@@ -29,36 +29,39 @@ const CONFIG = {
   STARTER_NAV_BUTTON_2_TEXT: 'Sign Up',//    Sign Up
   STARTER_NAV_BUTTON_2_URL: '/sign-up',//     /sign-up
 
-  // 特性区块
+  // 特性区块(分组介绍)
   STARTER_FEATURE_ENABLE: true, // 特性区块开关
   STARTER_FEATURE_TITLE: '组织介绍', // 特性
-  STARTER_FEATURE_TEXT_1: '长空御风战队的分组安排', // 特性
+  STARTER_FEATURE_TEXT_1: '长空御风战队', // 特性
   STARTER_FEATURE_TEXT_2:
-    '长空御风战队欢迎每一个怀揣机甲梦想的同学，共同成长，共同进步！', // 特性
+    '长空御风战队欢迎每一个怀揣机甲梦想的同学\n共同成长，共同进步！', // 特性
 
   STARTER_FEATURE_1_TITLE_1: '机械组', // 特性1
   STARTER_FEATURE_1_TEXT_1: '根据比赛规则和战术需求，自主研发机器人，并进行结构优化，以提高其稳定性、机动性', // 特性1
   STARTER_FEATURE_1_BUTTON_TEXT: '了解更多', // 特性1
-  STARTER_FEATURE_1_BUTTON_URL: 'https://github.com/tangly1024/NotionNext', // 特性1
+  STARTER_FEATURE_1_BUTTON_URL:
+    'https://witty-map-6bd.notion.site/11e24a7052ae80d1a361dbe30141f40b', // 特性1
 
   STARTER_FEATURE_2_TITLE_1: '电控组', // 特性2
   STARTER_FEATURE_2_TEXT_1: '负责机器人电子硬件的焊接与调试，确保机器人电气系统的稳定性；使用程序语言编写机器人控制软件', // 特性2
   STARTER_FEATURE_2_BUTTON_TEXT: '了解更多', // 特性2
   STARTER_FEATURE_2_BUTTON_URL:
-    'https://docs.tangly1024.com/article/notion-next-themes', // 特性2
+    'https://witty-map-6bd.notion.site/11e24a7052ae80488075d8d25c852ace', // 特性2
 
   STARTER_FEATURE_3_TITLE_1: '算法组', // 特性3
   STARTER_FEATURE_3_TEXT_1: '利用图像处理库实现机器人的视觉功能，并根据比赛需求开发特定的视觉和导航算法', // 特性3
   STARTER_FEATURE_3_BUTTON_TEXT: '了解更多', // 特性3
-  STARTER_FEATURE_3_BUTTON_URL: 'https://docs.tangly1024.com/article/next-js', // 特性3
+  STARTER_FEATURE_3_BUTTON_URL:
+    'https://witty-map-6bd.notion.site/11e24a7052ae809bb6d3c59c980b583f', // 特性3
 
   STARTER_FEATURE_4_TITLE_1: '宣经组', // 特性4
   STARTER_FEATURE_4_TEXT_1: '负责队伍的管理和宣传任务，旨在提升战队知名度和影响力，激发更多人对科技创新和机器人技术的兴趣', // 特性4
   STARTER_FEATURE_4_BUTTON_TEXT: '了解更多', // 特性4
-  STARTER_FEATURE_4_BUTTON_URL: 'https://docs.tangly1024.com/about', // 特性4
+  STARTER_FEATURE_4_BUTTON_URL:
+    'https://witty-map-6bd.notion.site/11e24a7052ae80faa5b2d264a0f8f411', // 特性4
 
   // 首页ABOUT区块
-  STARTER_ABOUT_ENABLE: true, // ABOUT区块开关
+  STARTER_ABOUT_ENABLE: false, // ABOUT区块开关
   STARTER_ABOUT_TITLE: '一套轻量实用的建站解决方案',
   STARTER_ABOUT_TEXT:
     'NotionNext的愿景是帮助非技术人员的小白，最低成本、最快速地搭建自己的网站，帮助您将自己的产品与故事高效地传达给世界。 <br /> <br /> 功能强大的Notion笔记，简单快速的Vercel托管平台，组成一个简单的网站',
@@ -71,7 +74,7 @@ const CONFIG = {
   STARTER_ABOUT_TIPS_3: '正在线上运行',
 
   // 首页价格区块
-  STARTER_PRICING_ENABLE: true, // 价格区块开关
+  STARTER_PRICING_ENABLE: false, // 价格区块开关
   STARTER_PRICING_TITLE: '价格表',
   STARTER_PRICING_TEXT_1: '很棒的定价计划',
   STARTER_PRICING_TEXT_2:
@@ -109,7 +112,7 @@ const CONFIG = {
     'https://tangly1024.lemonsqueezy.com/checkout/buy/df924d66-09dc-42a4-a632-a6b0c5cc4f28',
 
   // 首页用户测评区块
-  STARTER_TESTIMONIALS_ENABLE: true, // 测评区块开关
+  STARTER_TESTIMONIALS_ENABLE: false, // 测评区块开关
   STARTER_TESTIMONIALS_TITLE: '用户反馈',
   STARTER_TESTIMONIALS_TEXT_1: '我们的用户怎么说',
   STARTER_TESTIMONIALS_TEXT_2:
@@ -174,7 +177,7 @@ const CONFIG = {
   ],
 
   //   FAQ 常见问题模块
-  STARTER_FAQ_ENABLE: true, // 常见问题模块开关
+  STARTER_FAQ_ENABLE: false, // 常见问题模块开关
   STARTER_FAQ_TITLE: '常见问题解答',
   STARTER_FAQ_TEXT_1: '有任何问题吗？请看这里',
   STARTER_FAQ_TEXT_2: '我们收集了常见的用户疑问',
@@ -196,7 +199,7 @@ const CONFIG = {
     '先检查Notion_Page_ID是否正确配置，其次由于博客的每个页面都有独立缓存，刷新网页后即可解决',
 
   // 团队成员区块
-  STARTER_TEAM_ENABLE: true, // 团队成员区块开关
+  STARTER_TEAM_ENABLE: false, // 团队成员区块开关
   STARTER_TEAM_TITLE: '团队成员',
   STARTER_TEAM_TEXT_1: '我们的开发者团队',
   STARTER_TEAM_TEXT_2:
@@ -229,14 +232,14 @@ const CONFIG = {
 
   // 博客文章区块
   STARTER_BLOG_ENABLE: true, // 首页博文区块开关
-  STARTER_BLOG_TITLE: '我们的博客',
-  STARTER_BLOG_COUNT: 3, // 首页博文区块默认展示前3篇文章
-  STARTER_BLOG_TEXT_1: '最近的新闻',
+  STARTER_BLOG_TITLE: '技术文档&宣传文章',
+  STARTER_BLOG_COUNT: 6, // 首页博文区块默认展示前3篇文章
+  STARTER_BLOG_TEXT_1: '最近：',
   STARTER_BLOG_TEXT_2:
-    '这里会发布一些关于NotionNext的最新动态，包括新的动向、新的未来计划，以及新功能的特性',
+    '这里会发布一些……………………',
 
   // 联系模块
-  STARTER_CONTACT_ENABLE: true, // 联系模块开关
+  STARTER_CONTACT_ENABLE: false, // 联系模块开关
   STARTER_CONTACT_TITLE: '联系我们',
   STARTER_CONTACT_TEXT: '告诉我们您遇到的问题',
   STARTER_CONTACT_LOCATION_TITLE: '我们的位置',
@@ -359,12 +362,12 @@ const CONFIG = {
   STARTER_404_BACK: '回到主页',
 
   // 页面底部的行动呼吁模块
-  STARTER_CTA_ENABLE: true,
+  STARTER_CTA_ENABLE: false,
   STARTER_CTA_TITLE: '你还在等待什么呢？',
   STARTER_CTA_TITLE_2: '现在开始吧',
   STARTER_CTA_DESCRIOTN:
     '访问NotionNext的操作文档，我们提供了详细的教程，帮助你即刻搭建站点',
-  STARTER_CTA_BUTTON: true, // 是否显示按钮
+  STARTER_CTA_BUTTON: false, // 是否显示按钮
   STARTER_CTA_BUTTON_URL:
     'https://docs.tangly1024.com/article/vercel-deploy-notion-next',
   STARTER_CTA_BUTTON_TEXT: '开始体验',
