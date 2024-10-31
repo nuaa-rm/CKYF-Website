@@ -1,0 +1,52 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  yarn-build:
+    name: yarn-build工作
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:   
+    - name: 读取仓库内容
+      uses: actions/checkout@v4
+      
+    - name: 安装依赖
+      run: yarn
+      
+    - name: 项目打包
+      run: yarn build
+        
+        
+    - name: 登录DockerHub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME}}
+        password: ${{ secrets.DOCKERHUB_KEY}}
+        
+    - name: 构建并推送到Docker Hub
+      uses: docker/build-push-action@v5
+      with:
+        push: true
+        tags: lbwgithub/ckyf-website:latest
+      
+      
+      
+      
