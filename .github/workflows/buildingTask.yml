@@ -34,7 +34,7 @@ jobs:
     - name: 登录Docker
       uses: docker/login-action@v3
       with:
-        registry: crpi-frgma9xddzd6cyy7.cn-shanghai.personal.cr.aliyuncs.com
+        registry: ${{ secrets.ALIYUN_REGISTRY}}
         username: ${{ secrets.ALIYUN_USERNAME}}
         password: ${{ secrets.ALIYUN_KEY}}
         
