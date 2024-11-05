@@ -1,4 +1,9 @@
 # 帮助教程
+> 服务器部署教程(这一步是半自动)  
+> 等待GitHub Actions自动部署完成  
+> 打开一个终端 输入 `ssh root@106.15.104.220`  
+> 输入密码登录服务器，输入`sudo reboot`重启服务器  
+> 再次登录之后，输入`bash setbase.sh`可以完成部署  
 
 访问帮助：[NotionNext帮助手册](https://docs.tangly1024.com/) 
 
