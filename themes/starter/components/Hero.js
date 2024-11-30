@@ -6,7 +6,6 @@ import { siteConfig } from '@/lib/config'
  */
 export const Hero = () => {
   const image = siteConfig('STARTER_HERO_IMAGES')?.[0] || '';
-  const backgroundImage = 'https://rm-static.djicdn.com/tem/55708/852d84178ee8e1669738327774657635.JPG';
   return (
     <>
       {/* <!-- ====== Hero Section Start --> */}
@@ -14,7 +13,7 @@ export const Hero = () => {
         id='home'
         className='relative overflow-hidden pt-[120px] md:pt-[130px] lg:pt-[160px]'>
         <img
-          src={backgroundImage}
+          src="bg.jpg"
           alt='hero'
           className='absolute inset-0 z-[-1] w-full h-full object-cover'
         />
