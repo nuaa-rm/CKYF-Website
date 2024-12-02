@@ -40,25 +40,25 @@ const CONFIG = {
   STARTER_FEATURE_1_TEXT_1: '根据比赛规则和战术需求，自主研发机器人，并进行结构优化，以提高其稳定性、机动性', // 特性1
   STARTER_FEATURE_1_BUTTON_TEXT: '了解更多', // 特性1
   STARTER_FEATURE_1_BUTTON_URL:
-    'https://witty-map-6bd.notion.site/11e24a7052ae80d1a361dbe30141f40b', // 特性1
+    'https://ckyf.org.cn/article/机械组', // 特性1
 
   STARTER_FEATURE_2_TITLE_1: '电控组', // 特性2
   STARTER_FEATURE_2_TEXT_1: '负责机器人电子硬件的焊接与调试，确保机器人电气系统的稳定性；使用程序语言编写机器人控制软件', // 特性2
   STARTER_FEATURE_2_BUTTON_TEXT: '了解更多', // 特性2
   STARTER_FEATURE_2_BUTTON_URL:
-    'https://witty-map-6bd.notion.site/11e24a7052ae80488075d8d25c852ace', // 特性2
+    'https://ckyf.org.cn/article/电控组', // 特性2
 
   STARTER_FEATURE_3_TITLE_1: '算法组', // 特性3
   STARTER_FEATURE_3_TEXT_1: '利用图像处理库实现机器人的视觉功能，并根据比赛需求开发特定的视觉和导航算法', // 特性3
   STARTER_FEATURE_3_BUTTON_TEXT: '了解更多', // 特性3
   STARTER_FEATURE_3_BUTTON_URL:
-    'https://witty-map-6bd.notion.site/11e24a7052ae809bb6d3c59c980b583f', // 特性3
+    'https://ckyf.org.cn/article/算法组', // 特性3
 
   STARTER_FEATURE_4_TITLE_1: '宣经组', // 特性4
   STARTER_FEATURE_4_TEXT_1: '负责队伍的管理和宣传任务，旨在提升战队知名度和影响力，激发更多人对科技创新和机器人技术的兴趣', // 特性4
   STARTER_FEATURE_4_BUTTON_TEXT: '了解更多', // 特性4
   STARTER_FEATURE_4_BUTTON_URL:
-    'https://witty-map-6bd.notion.site/11e24a7052ae80faa5b2d264a0f8f411', // 特性4
+    'https://ckyf.org.cn/article/宣经组', // 特性4
 
   // 首页ABOUT区块
   STARTER_ABOUT_ENABLE: false, // ABOUT区块开关
@@ -199,34 +199,55 @@ const CONFIG = {
     '先检查Notion_Page_ID是否正确配置，其次由于博客的每个页面都有独立缓存，刷新网页后即可解决',
 
   // 团队成员区块
-  STARTER_TEAM_ENABLE: false, // 团队成员区块开关
+  STARTER_TEAM_ENABLE: true, // 团队成员区块开关
   STARTER_TEAM_TITLE: '团队成员',
   STARTER_TEAM_TEXT_1: '我们的开发者团队',
   STARTER_TEAM_TEXT_2:
     'NotionNext 由众多开源技术爱好者们共同合作完成，感谢每一位<a className="underline" href="https://github.com/tangly1024/NotionNext/graphs/contributors">贡献者</a>',
-
   // 这里不支持CONFIG和环境变量，需要一一修改此处代码。
   STARTER_TEAM_ITEMS: [
     {
       STARTER_TEAM_ITEM_AVATAR:
         'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa06c61bb-980e-4180-bc18-c15f92c78bb4%2Ftangly1024.jpg?table=collection&id=8e7acf17-de09-4fa1-abde-b5b80ad4a813&t=8e7acf17-de09-4fa1-abde-b5b80ad4a813&width=100&cache=v2',
-      STARTER_TEAM_ITEM_NICKNAME: 'Tangly',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Developer'
+      STARTER_TEAM_ITEM_NICKNAME: '英雄机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: '帅帅狙击手',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/英雄机器人"
     },
     {
       STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-01.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Melissa Tatcher',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Marketing Expert'
+      STARTER_TEAM_ITEM_NICKNAME: '工程机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: 'Marketing Expert',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/工程机器人"
     },
     {
       STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-02.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Stuard Ferrel',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Digital Marketer'
+      STARTER_TEAM_ITEM_NICKNAME: '工程机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: 'Digital Marketer',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/工程机器人"
     },
     {
       STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Eva Hudson',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer'
+      STARTER_TEAM_ITEM_NICKNAME: '哨兵机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/哨兵机器人"
+    },
+    {
+      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
+      STARTER_TEAM_ITEM_NICKNAME: '空中机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/空中机器人"
+    },
+    {
+      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
+      STARTER_TEAM_ITEM_NICKNAME: '飞镖装置',
+      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/飞镖装置"
+    },
+    {
+      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
+      STARTER_TEAM_ITEM_NICKNAME: '雷达系统',
+      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/雷达系统"
     }
   ],
 
