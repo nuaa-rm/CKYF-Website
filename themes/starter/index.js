@@ -87,14 +87,6 @@ const LayoutIndex = props => {
       {siteConfig('STARTER_HERO_ENABLE') && <Hero />}
       {/* 产品特性 */}
       {siteConfig('STARTER_FEATURE_ENABLE') && <Features />}
-      {/* 关于 */}
-      {siteConfig('STARTER_ABOUT_ENABLE') && <About />}
-      {/* 价格 */}
-      {siteConfig('STARTER_PRICING_ENABLE') && <Pricing />}
-      {/* 评价展示 */}
-      {siteConfig('STARTER_TESTIMONIALS_ENABLE') && <Testimonials />}
-      {/* 常见问题 */}
-      {siteConfig('STARTER_FAQ_ENABLE') && <FAQ />}
       {/* 团队介绍 */}
       {siteConfig('STARTER_TEAM_ENABLE') && <Team />}
       {/* 博文列表 */}
@@ -109,10 +101,18 @@ const LayoutIndex = props => {
           </div>
         </>
       )}
-      {/* 联系方式 */}
-      {siteConfig('STARTER_CONTACT_ENABLE') && <Contact />}
       {/* 合作伙伴 */}
       {siteConfig('STARTER_BRANDS_ENABLE') && <Brand />}
+      {/* 关于 */}
+      {siteConfig('STARTER_ABOUT_ENABLE') && <About />}
+      {/* 价格 */}
+      {siteConfig('STARTER_PRICING_ENABLE') && <Pricing />}
+      {/* 评价展示 */}
+      {siteConfig('STARTER_TESTIMONIALS_ENABLE') && <Testimonials />}
+      {/* 常见问题 */}
+      {siteConfig('STARTER_FAQ_ENABLE') && <FAQ />}
+      {/* 联系方式 */}
+      {siteConfig('STARTER_CONTACT_ENABLE') && <Contact />}
       {/* 行动呼吁 */}
       {siteConfig('STARTER_CTA_ENABLE') && <CTA />}
     </>

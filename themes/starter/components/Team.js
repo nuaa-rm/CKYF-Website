@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { siteConfig } from '@/lib/config'
 import { SVGAvatarBG } from './svg/SVGAvatarBG'
+import { SVGFacebook } from '@/themes/starter/components/svg/SVGFacebook'
 
 export const Team = () => {
   const STARTER_TEAM_ITEMS = siteConfig('STARTER_TEAM_ITEMS')
@@ -55,23 +56,27 @@ export const Team = () => {
                       <h4 className='mb-1 text-lg font-semibold text-dark dark:text-white'>
                         {item.STARTER_TEAM_ITEM_NICKNAME}
                       </h4>
-
                       <p className='mb-5 text-sm text-body-color dark:text-dark-6'>
                         {item.STARTER_TEAM_ITEM_DESCRIPTION}
                       </p>
 
                       {/* 社交链接 */}
-                      {/* <div className='flex items-center justify-center gap-5'>
-                        <a className='text-dark-6 hover:text-primary'>
-                          <SVGFacebook className='fill-current' />
-                        </a>
-                        <a className='text-dark-6 hover:text-primary'>
+                      {
+                        <div className='flex items-center justify-center gap-5'>
+                          <a
+                            href={item.STARTER_TEAM_ITEM_URL}
+                            className='text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary'>
+                            {siteConfig('STARTER_FEATURE_1_BUTTON_TEXT')}
+                          </a>
+                          {/*<a className='text-dark-6 hover:text-primary'>
                           <SVGTwitter className='fill-current' />
                         </a>
                         <a className='text-dark-6 hover:text-primary'>
                           <SVGInstagram className='fill-current' />
-                        </a>
-                      </div> */}
+
+                        </a>*/}
+                        </div>
+                      }
                     </div>
                   </div>
                 </div>

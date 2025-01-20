@@ -13,9 +13,11 @@ const CONFIG = {
   STARTER_HERO_TITLE_1: '长空无界，御风无疆', // 英雄区文字
   STARTER_HERO_TITLE_2: '工程师的梦想，从这里启航！', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
-  STARTER_HERO_BUTTON_1_TEXT: '', //'了解我们', // 英雄区按钮
-  STARTER_HERO_BUTTON_1_URL: '',
-    //'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
+
+  STARTER_HERO_BUTTON_1_TEXT: '', // 英雄区按钮
+  STARTER_HERO_BUTTON_1_URL:
+    ' ', // 英雄区按钮
+
   STARTER_HERO_BUTTON_2_TEXT: '在Bilibili上关注', // 英雄区按钮
   STARTER_HERO_BUTTON_2_URL: 'https://space.bilibili.com/22993364?spm_id_from=333.337.search-card.all.click', // 英雄区按钮
   STARTER_HERO_BUTTON_2_ICON: '/images/starter/bilibili.svg', // 英雄区按钮2的图标，不需要则留空 /images/starter/github.svg
@@ -30,33 +32,36 @@ const CONFIG = {
   STARTER_NAV_BUTTON_2_TEXT: '',//    Sign Up
   STARTER_NAV_BUTTON_2_URL: '',//     /sign-up
 
-  // 特性区块
+  // 特性区块(分组介绍)
   STARTER_FEATURE_ENABLE: true, // 特性区块开关
   STARTER_FEATURE_TITLE: '组织介绍', // 特性
-  STARTER_FEATURE_TEXT_1: '长空御风战队的分组安排', // 特性
+  STARTER_FEATURE_TEXT_1: '长空御风战队', // 特性
   STARTER_FEATURE_TEXT_2:
-    '长空御风战队欢迎每一个怀揣机甲梦想的同学，共同成长，共同进步！', // 特性
+    '长空御风战队欢迎每一个怀揣机甲梦想的同学\n共同成长，共同进步！', // 特性
 
   STARTER_FEATURE_1_TITLE_1: '机械组', // 特性1
   STARTER_FEATURE_1_TEXT_1: '根据比赛规则和战术需求，自主研发机器人，并进行结构优化，以提高其稳定性、机动性', // 特性1
   STARTER_FEATURE_1_BUTTON_TEXT: '了解更多', // 特性1
-  STARTER_FEATURE_1_BUTTON_URL: 'https://github.com/tangly1024/NotionNext', // 特性1
+  STARTER_FEATURE_1_BUTTON_URL:
+    'https://ckyf-website.vercel.app/article/机械组', // 特性1
 
   STARTER_FEATURE_2_TITLE_1: '电控组', // 特性2
   STARTER_FEATURE_2_TEXT_1: '负责机器人电子硬件的焊接与调试，确保机器人电气系统的稳定性；使用程序语言编写机器人控制软件', // 特性2
   STARTER_FEATURE_2_BUTTON_TEXT: '了解更多', // 特性2
   STARTER_FEATURE_2_BUTTON_URL:
-    'https://docs.tangly1024.com/article/notion-next-themes', // 特性2
+    'https://ckyf.org.cn/article/电控组', // 特性2
 
   STARTER_FEATURE_3_TITLE_1: '算法组', // 特性3
   STARTER_FEATURE_3_TEXT_1: '利用图像处理库实现机器人的视觉功能，并根据比赛需求开发特定的视觉和导航算法', // 特性3
   STARTER_FEATURE_3_BUTTON_TEXT: '了解更多', // 特性3
-  STARTER_FEATURE_3_BUTTON_URL: 'https://docs.tangly1024.com/article/next-js', // 特性3
+  STARTER_FEATURE_3_BUTTON_URL:
+    'https://ckyf.org.cn/article/算法组', // 特性3
 
   STARTER_FEATURE_4_TITLE_1: '宣经组', // 特性4
   STARTER_FEATURE_4_TEXT_1: '负责队伍的管理和宣传任务，旨在提升战队知名度和影响力，激发更多人对科技创新和机器人技术的兴趣', // 特性4
   STARTER_FEATURE_4_BUTTON_TEXT: '了解更多', // 特性4
-  STARTER_FEATURE_4_BUTTON_URL: 'https://docs.tangly1024.com/about', // 特性4
+  STARTER_FEATURE_4_BUTTON_URL:
+    'https://ckyf.org.cn/article/宣经组', // 特性4
 
   // 首页ABOUT区块
   STARTER_ABOUT_ENABLE: false, // ABOUT区块开关
@@ -198,43 +203,68 @@ const CONFIG = {
 
   // 团队成员区块
   STARTER_TEAM_ENABLE: true, // 团队成员区块开关
-  STARTER_TEAM_TITLE: '团队成员',
-  STARTER_TEAM_TEXT_1: '我们的开发者团队',
-  STARTER_TEAM_TEXT_2:
-    'NotionNext 由众多开源技术爱好者们共同合作完成，感谢每一位<a className="underline" href="https://github.com/tangly1024/NotionNext/graphs/contributors">贡献者</a>',
+  STARTER_TEAM_TITLE: '机器人队伍',
+  STARTER_TEAM_TEXT_1: '我们的机器人',
+  STARTER_TEAM_TEXT_2:'诸般机巧，各司其职，或攻或守，或智或力，协同并济，方成战场之胜局!',
 
-  // 这里不支持CONFIG和环境变量，需要一一修改此处代码。
   STARTER_TEAM_ITEMS: [
     {
-      STARTER_TEAM_ITEM_AVATAR:
-        'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa06c61bb-980e-4180-bc18-c15f92c78bb4%2Ftangly1024.jpg?table=collection&id=8e7acf17-de09-4fa1-abde-b5b80ad4a813&t=8e7acf17-de09-4fa1-abde-b5b80ad4a813&width=100&cache=v2',
-      STARTER_TEAM_ITEM_NICKNAME: 'Tangly',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Developer'
+      STARTER_TEAM_ITEM_AVATAR:'/robots_pic/yingxiong.png',
+      STARTER_TEAM_ITEM_NICKNAME: '英雄机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: '破城拔寨，一马当先。此乃阵前之雄，军中之胆！',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/英雄机器人"
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-01.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Melissa Tatcher',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Marketing Expert'
+      STARTER_TEAM_ITEM_AVATAR: '/robots_pic/gong_cheng.png',
+      STARTER_TEAM_ITEM_NICKNAME: '工程机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: '采石炼金，资粮丰足，乃队伍经济之砥柱也。',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/工程机器人"
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-02.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Stuard Ferrel',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Digital Marketer'
+      STARTER_TEAM_ITEM_AVATAR: '/robots_pic/bu_bing.png',
+      STARTER_TEAM_ITEM_NICKNAME: '步兵机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: '列阵而行，持戈而进，此乃行伍之卒，锋锐之兵。',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/步兵机器人"
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Eva Hudson',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer'
+      STARTER_TEAM_ITEM_AVATAR: '/robots_pic/lun_tui.png',
+      STARTER_TEAM_ITEM_NICKNAME: '平衡步兵',
+      STARTER_TEAM_ITEM_DESCRIPTION: '腾挪闪转，进退自如，乃轻捷之士，灵动神兵也。',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/平衡步兵"
+    },
+    {
+      STARTER_TEAM_ITEM_AVATAR: 'robots_pic/shao_bing.png',
+      STARTER_TEAM_ITEM_NICKNAME: '哨兵机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: '全然洞悉战局，应变自如，乃战场之上，智慧之枢机也。',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/哨兵机器人"
+    },
+    {
+      STARTER_TEAM_ITEM_AVATAR: 'robots_pic/wu_ren_ji.png',
+      STARTER_TEAM_ITEM_NICKNAME: '空中机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: '翱翔九天，俯瞰八荒，此乃凌空之羽士，应变之神兵也',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/空中机器人"
+    },
+    {
+      STARTER_TEAM_ITEM_AVATAR: 'robots_pic/fei_biao.png',
+      STARTER_TEAM_ITEM_NICKNAME: '飞镖装置',
+      STARTER_TEAM_ITEM_DESCRIPTION: '千里之外，取敌方基地，一击必杀，乃扭转乾坤之关键',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/飞镖装置"
+    },
+    {
+      STARTER_TEAM_ITEM_AVATAR: 'robots_pic/lei_da.png',
+      STARTER_TEAM_ITEM_NICKNAME: '雷达系统',
+      STARTER_TEAM_ITEM_DESCRIPTION: '说时迟，那时快，且看这千里眼顺风耳!',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/雷达系统"
     }
   ],
 
   // 博客文章区块
   STARTER_BLOG_ENABLE: true, // 首页博文区块开关
-  STARTER_BLOG_TITLE: '我们的博客',
+  STARTER_BLOG_TITLE: '技术文档&宣传文章',
   STARTER_BLOG_COUNT: 6, // 首页博文区块默认展示前3篇文章
-  STARTER_BLOG_TEXT_1: '最近的新闻',
+  STARTER_BLOG_TEXT_1: '最近：',
   STARTER_BLOG_TEXT_2:
-    '这里会发布一些关于NotionNext的最新动态，包括新的动向、新的未来计划，以及新功能的特性',
+    '这里会发布一些……………………',
 
   // 联系模块
   STARTER_CONTACT_ENABLE: false, // 联系模块开关
@@ -291,7 +321,7 @@ const CONFIG = {
     }
   ],
 
-  STARTER_FOOTER_SLOGAN: '长空无界，御风无疆',
+  STARTER_FOOTER_SLOGAN: '长空御风，为战而生。',
 
   // 页脚三列菜单组
   STARTER_FOOTER_LINK_GROUP: [
@@ -305,6 +335,7 @@ const CONFIG = {
         { TITLE: '空中机器人', URL: '/空中机器人' },
         { TITLE: '飞镖系统', URL: '/飞镖系统' },
         { TITLE: '雷达系统', URL: '/雷达系统' }
+
       ]
     },
     {
@@ -349,7 +380,7 @@ const CONFIG = {
   STARTER_CTA_TITLE_2: '现在开始吧',
   STARTER_CTA_DESCRIOTN:
     '访问NotionNext的操作文档，我们提供了详细的教程，帮助你即刻搭建站点',
-  STARTER_CTA_BUTTON: true, // 是否显示按钮
+  STARTER_CTA_BUTTON: false, // 是否显示按钮
   STARTER_CTA_BUTTON_URL:
     'https://docs.tangly1024.com/article/vercel-deploy-notion-next',
   STARTER_CTA_BUTTON_TEXT: '开始体验',
