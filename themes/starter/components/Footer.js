@@ -65,7 +65,7 @@ export const Footer = props => {
                 <h4 className='mb-9 text-lg font-semibold text-white'>
                   {siteConfig('STARTER_FOOTER_BLOG_LATEST_TITLE')}
                 </h4>
-                {/* 展示两条最新博客文章 */}
+                {/* 展示两条最新博客文章
                 <div className='flex flex-col gap-8'>
                   {latestPosts?.map((item, index) => {
                     return (
@@ -82,13 +82,28 @@ export const Footer = props => {
                       </a>
                     )
                   })}
-                </div>
+                </div> */}
+                {/* 联系方式 */}
+                <ul>
+                  <li className='mb-3 inline-block text-base text-gray-7 hover:text-primary'>
+                    地址：...
+                  </li><br/>
+                  <li className='mb-3 inline-block text-base text-gray-7 hover:text-primary'>
+                    电话：...
+                  </li><br/>
+                  <li className='mb-3 inline-block text-base text-gray-7 hover:text-primary'>
+                    邮箱：...
+                  </li><br/>
+                  <li className='mb-3 inline-block text-base text-gray-7 hover:text-primary'>
+                    B站：...
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        {/* 底部版权信息相关 */}
+        {/* 底部版权信息相关
 
         <div className='mt-12 border-t border-[#8890A4] border-opacity-40 py-8 lg:mt-[60px]'>
           <div className='container'>
@@ -136,7 +151,7 @@ export const Footer = props => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Footer 背景 */}
         <div>

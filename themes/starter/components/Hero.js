@@ -4,12 +4,21 @@ import { siteConfig } from '@/lib/config'
  * 英雄大图区块
  */
 export const Hero = () => {
+  const previewImage = siteConfig('STARTER_HERO_PREVIEW_IMAGE');
+  const backgroundImage = siteConfig('STARTER_HERO_BACKGROUND_IMAGE');
   return (
     <>
-      {/* <!-- ====== Hero Section Start --> */}
+      {/* <!-- ====== Hero Section Start --> */}    
       <div
         id='home'
-        className='relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]'>
+        className={`relative overflow-hidden pt-[120px] md:pt-[130px] lg:pt-[160px] ${
+          backgroundImage ? '' : 'bg-primary'
+        }`}>
+        {(backgroundImage) && (<img
+          src={backgroundImage}
+          alt='hero'
+          className='absolute inset-0 z-[-1] w-full h-full object-cover'
+        />)}
         <div className='container'>
           <div className='-mx-4 flex flex-wrap items-center'>
             <div className='w-full px-4'>
@@ -57,7 +66,7 @@ export const Hero = () => {
             </div>
 
             {/* 产品预览图片 */}
-            {siteConfig('STARTER_HERO_PREVIEW_IMAGE') && (
+            {previewImage && (
               <div className='w-full px-4'>
                 <div
                   className='wow fadeInUp relative z-10 mx-auto max-w-[845px]'
@@ -65,7 +74,7 @@ export const Hero = () => {
                   <div className='mt-16'>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={siteConfig('STARTER_HERO_PREVIEW_IMAGE')}
+                      src={previewImage}
                       alt='hero'
                       className='mx-auto max-w-full rounded-t-xl rounded-tr-xl'
                     />

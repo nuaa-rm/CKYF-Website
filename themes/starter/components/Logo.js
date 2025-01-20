@@ -13,7 +13,8 @@ import { useEffect, useState } from 'react'
 export const Logo = ({ white }) => {
   const router = useRouter()
   const { isDarkMode } = useGlobal()
-  const logoWhite = '/images/starter/logo/ckyf_black.svg'
+  const logoWhite = siteConfig("STARTER_LOGO")
+  const logoBlack = siteConfig("STARTER_LOGO_BLACK")
   const [logo, setLogo] = useState(logoWhite)
   const [logoTextColor, setLogoTextColor] = useState('text-white')
 
@@ -25,10 +26,10 @@ export const Logo = ({ white }) => {
       // 何时显示浅色或白底的logo
       const homePageNavBar = router.route === '/' && scrollY < 10 // 在首页并且视窗在页面顶部
       if (white || isDarkMode || homePageNavBar) {
-        setLogo('/images/starter/logo/ckyf_black.svg')
+        setLogo(logoWhite)
         setLogoTextColor('text-white')
       } else {
-        setLogo('/images/starter/logo/ckyf_white.svg')
+        setLogo(logoBlack)
         setLogoTextColor('text-black')
       }
     }, throttleMs)
@@ -60,7 +61,7 @@ export const Logo = ({ white }) => {
             router.push('/')
           }}
           className={`${logoTextColor} dark:text-white py-1.5 header-logo-text whitespace-nowrap text-2xl font-semibold`}>
-          {siteConfig('TITLE')}
+          {siteConfig('TITLE') /*从notion获取*/} 
         </span>
       </div>
     </div>
