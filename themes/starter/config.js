@@ -40,7 +40,7 @@ const CONFIG = {
   STARTER_FEATURE_1_TEXT_1: '根据比赛规则和战术需求，自主研发机器人，并进行结构优化，以提高其稳定性、机动性', // 特性1
   STARTER_FEATURE_1_BUTTON_TEXT: '了解更多', // 特性1
   STARTER_FEATURE_1_BUTTON_URL:
-    'https://ckyf.org.cn/article/机械组', // 特性1
+    'https://ckyf-website.vercel.app/article/机械组', // 特性1
 
   STARTER_FEATURE_2_TITLE_1: '电控组', // 特性2
   STARTER_FEATURE_2_TEXT_1: '负责机器人电子硬件的焊接与调试，确保机器人电气系统的稳定性；使用程序语言编写机器人控制软件', // 特性2
@@ -200,53 +200,57 @@ const CONFIG = {
 
   // 团队成员区块
   STARTER_TEAM_ENABLE: true, // 团队成员区块开关
-  STARTER_TEAM_TITLE: '团队成员',
-  STARTER_TEAM_TEXT_1: '我们的开发者团队',
-  STARTER_TEAM_TEXT_2:
-    'NotionNext 由众多开源技术爱好者们共同合作完成，感谢每一位<a className="underline" href="https://github.com/tangly1024/NotionNext/graphs/contributors">贡献者</a>',
-  // 这里不支持CONFIG和环境变量，需要一一修改此处代码。
+  STARTER_TEAM_TITLE: '机器人队伍',
+  STARTER_TEAM_TEXT_1: '我们的机器人',
+  STARTER_TEAM_TEXT_2:'诸般机巧，各司其职，或攻或守，或智或力，协同并济，方成战场之胜局!',
+
   STARTER_TEAM_ITEMS: [
     {
-      STARTER_TEAM_ITEM_AVATAR:
-        'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa06c61bb-980e-4180-bc18-c15f92c78bb4%2Ftangly1024.jpg?table=collection&id=8e7acf17-de09-4fa1-abde-b5b80ad4a813&t=8e7acf17-de09-4fa1-abde-b5b80ad4a813&width=100&cache=v2',
+      STARTER_TEAM_ITEM_AVATAR:'/robots_pic/yingxiong.png',
       STARTER_TEAM_ITEM_NICKNAME: '英雄机器人',
-      STARTER_TEAM_ITEM_DESCRIPTION: '帅帅狙击手',
+      STARTER_TEAM_ITEM_DESCRIPTION: '破城拔寨，一马当先。此乃阵前之雄，军中之胆！',
       STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/英雄机器人"
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-01.png',
+      STARTER_TEAM_ITEM_AVATAR: '/robots_pic/gong_cheng.png',
       STARTER_TEAM_ITEM_NICKNAME: '工程机器人',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Marketing Expert',
+      STARTER_TEAM_ITEM_DESCRIPTION: '采石炼金，资粮丰足，乃队伍经济之砥柱也。',
       STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/工程机器人"
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-02.png',
-      STARTER_TEAM_ITEM_NICKNAME: '工程机器人',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Digital Marketer',
-      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/工程机器人"
+      STARTER_TEAM_ITEM_AVATAR: '/robots_pic/bu_bing.png',
+      STARTER_TEAM_ITEM_NICKNAME: '步兵机器人',
+      STARTER_TEAM_ITEM_DESCRIPTION: '列阵而行，持戈而进，此乃行伍之卒，锋锐之兵。',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/步兵机器人"
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
+      STARTER_TEAM_ITEM_AVATAR: '/robots_pic/lun_tui.png',
+      STARTER_TEAM_ITEM_NICKNAME: '平衡步兵',
+      STARTER_TEAM_ITEM_DESCRIPTION: '腾挪闪转，进退自如，乃轻捷之士，灵动神兵也。',
+      STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/平衡步兵"
+    },
+    {
+      STARTER_TEAM_ITEM_AVATAR: 'robots_pic/shao_bing.png',
       STARTER_TEAM_ITEM_NICKNAME: '哨兵机器人',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer',
+      STARTER_TEAM_ITEM_DESCRIPTION: '全然洞悉战局，应变自如，乃战场之上，智慧之枢机也。',
       STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/哨兵机器人"
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
+      STARTER_TEAM_ITEM_AVATAR: 'robots_pic/wu_ren_ji.png',
       STARTER_TEAM_ITEM_NICKNAME: '空中机器人',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer',
+      STARTER_TEAM_ITEM_DESCRIPTION: '翱翔九天，俯瞰八荒，此乃凌空之羽士，应变之神兵也',
       STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/空中机器人"
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
+      STARTER_TEAM_ITEM_AVATAR: 'robots_pic/fei_biao.png',
       STARTER_TEAM_ITEM_NICKNAME: '飞镖装置',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer',
+      STARTER_TEAM_ITEM_DESCRIPTION: '千里之外，取敌方基地，一击必杀，乃扭转乾坤之关键',
       STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/飞镖装置"
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
+      STARTER_TEAM_ITEM_AVATAR: 'robots_pic/lei_da.png',
       STARTER_TEAM_ITEM_NICKNAME: '雷达系统',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer',
+      STARTER_TEAM_ITEM_DESCRIPTION: '说时迟，那时快，且看这千里眼顺风耳!',
       STARTER_TEAM_ITEM_URL:"https://ckyf.org.cn/article/雷达系统"
     }
   ],
@@ -314,7 +318,7 @@ const CONFIG = {
     }
   ],
 
-  STARTER_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验。',
+  STARTER_FOOTER_SLOGAN: '长空御风，为战而生。',
 
   // 页脚三列菜单组
   STARTER_FOOTER_LINK_GROUP: [
@@ -322,47 +326,16 @@ const CONFIG = {
       TITLE: '关于我们',
       LINK_GROUP: [
         { TITLE: '官方主页', URL: '/#home' },
-        { TITLE: '操作文档', URL: 'https://docs.tangly1024.com/about' },
-        {
-          TITLE: '帮助支持',
-          URL: 'https://docs.tangly1024.com/article/how-to-question'
-        },
-        {
-          TITLE: '合作申请',
-          URL: 'https://docs.tangly1024.com/article/my-service'
-        }
       ]
     },
     {
       TITLE: '功能特性',
       LINK_GROUP: [
-        {
-          TITLE: '部署指南',
-          URL: 'https://docs.tangly1024.com/article/vercel-deploy-notion-next'
-        },
-        {
-          TITLE: '升级指南',
-          URL: 'https://docs.tangly1024.com/article/how-to-update-notionnext'
-        },
-        { TITLE: '最新版本', URL: 'https://docs.tangly1024.com/article/latest' }
+
       ]
     },
     {
-      TITLE: 'Notion写作',
-      LINK_GROUP: [
-        {
-          TITLE: 'Notion开始写作',
-          URL: 'https://docs.tangly1024.com/article/start-to-write'
-        },
-        {
-          TITLE: '快捷键提升效率',
-          URL: 'https://docs.tangly1024.com/article/notion-short-key'
-        },
-        {
-          TITLE: '中国大陆使用Notion',
-          URL: 'https://docs.tangly1024.com/article/notion-faster'
-        }
-      ]
+
     }
   ],
 
