@@ -251,6 +251,10 @@ const CONFIG = {
     }
   ],
 
+  //news区块
+  STARTER_NEWS_ENABLE: true, // 是否启用 news 区块
+  STARTER_NEWS_TITLE: '最新资讯', // news 区块标题
+
   // 博客文章区块
   STARTER_BLOG_ENABLE: true, // 首页博文区块开关
   STARTER_BLOG_TITLE: '技术文档&宣传文章',

@@ -194,6 +194,59 @@ const Style = () => {
   height: auto;
   width: auto;
 }
+
+  /* starter的首页响应式分栏 */
+  #theme-starter .grid-item-spec {
+      height: auto;
+      break-inside: avoid-column;
+      margin-bottom: .5rem;
+  }
+
+  /* 大屏幕（宽度≥1024px）下显示3列 */
+  @media (min-width: 1024px) {
+      #theme-starter .grid-container-spec {
+          column-count: 3;
+          column-gap: .5rem;
+      }
+  }
+
+  /* 小屏幕（宽度≥640px）下显示2列 */
+  @media (min-width: 640px) and (max-width: 1023px) {
+      #theme-starter .grid-container-spec {
+          column-count: 2;
+          column-gap: .5rem;
+      }
+  }
+
+  /* 移动端（宽度<640px）下显示1列 */
+  @media (max-width: 639px) {
+      #theme-starter .grid-container-spec {
+          column-count: 1;
+          column-gap: .5rem;
+      }
+  }
+  
+  .container-news {
+      display: grid;
+      //grid-template-columns: 2fr 1fr;   /* 主新闻卡片占两份，右侧小卡片占一份 */
+      grid-row: ;
+      gap: 16px;
+      align-items: start;
+  }
+  
+  .main-news-card {
+      height: auto;
+      grid-row: span 3;
+  }
+  
+  .side-news-card {
+      display: grid;
+      //grid-template-columns: repeat(2, minmax(0, 1fr));
+      gird--row: span 1;
+      //grid-template-rows: repeat(auto-fill, minmax(calc(50% - 8px), 1fr)); /* 自动调整卡片高度 */
+      gap: 8px;
+  }
+
   `}</style>
 }
 

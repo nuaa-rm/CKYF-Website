@@ -35,6 +35,10 @@ import { CTA } from './components/CTA'
 import { SignInForm } from './components/SignInForm'
 import { SignUpForm } from './components/SignUpForm'
 import { SVG404 } from './components/svg/SVG404'
+import BlogListPage from './components/BlogListPage'
+import BlogListScroll from './components/BlogListScroll'
+import TagItemMini from './components/TagItemMini'
+import WWAds from '@/components/WWAds'
 
 /**
  * 布局框架
@@ -81,6 +85,7 @@ const LayoutBase = props => {
 const LayoutIndex = props => {
   const count = siteConfig('STARTER_BLOG_COUNT', 3, CONFIG)
   const posts = props?.allNavPages ? props.allNavPages.slice(0, count) : []
+  const POST_LIST_STYLE = siteConfig('POST_LIST_STYLE')
   return (
     <>
       {/* 英雄区 */}
@@ -89,6 +94,25 @@ const LayoutIndex = props => {
       {siteConfig('STARTER_FEATURE_ENABLE') && <Features />}
       {/* 团队介绍 */}
       {siteConfig('STARTER_TEAM_ENABLE') && <Team />}
+      {/*TODO:新建news区块*/}
+      {/* news区 */}
+      {siteConfig('STARTER_NEWS_ENABLE') && (
+        <>
+          <section className="news-section bg-gray-100 dark:bg-gray-900 py-10">
+            <div className="container mx-auto px-4">
+              <h2 className="text-2xl font-bold text-center mb-6 dark:text-white">
+                {siteConfig('STARTER_NEWS_TITLE', '最新资讯')}
+              </h2>
+              {POST_LIST_STYLE === 'page' ? (
+                <BlogListPage {...props} />
+              ) : (
+                <BlogListScroll {...props} />
+              )}
+            </div>
+          </section>
+        </>
+      )}
+
       {/* 博文列表 */}
       {siteConfig('STARTER_BLOG_ENABLE') && (
         <>
