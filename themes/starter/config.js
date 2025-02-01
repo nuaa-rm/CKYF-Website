@@ -3,8 +3,8 @@
  */
 const CONFIG = {
   // 默认只展示Logo文字，如果设置了logo图片，会在文字左侧显示图标
-  STARTER_LOGO: '/images/starter/logo/ckyf_black.svg', // 普通logo图片 示例：/images/starter/logo/logo.svg
-  STARTER_LOGO_WHITE: '/images/starter/logo/ckyf_white.svg', // 透明底浅色logo 示例： /images/starter/logo/logo-white.svg
+  STARTER_LOGO: '/images/starter/logo/ckyf_.svg', // 普通logo图片 示例：/images/starter/logo/logo.svg
+  STARTER_LOGO_BLACK: '/images/starter/logo/ckyf_.svg', // 透明底浅色logo 示例： /images/starter/logo/logo-white.svg
 
   // MENU ， 菜单部分不在此处配置，请在Notion数据库中添加MENU
 
@@ -13,21 +13,24 @@ const CONFIG = {
   STARTER_HERO_TITLE_1: '长空无界，御风无疆', // 英雄区文字
   STARTER_HERO_TITLE_2: '工程师的梦想，从这里启航！', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
+
   STARTER_HERO_BUTTON_1_TEXT: '', // 英雄区按钮
   STARTER_HERO_BUTTON_1_URL:
     ' ', // 英雄区按钮
+
   STARTER_HERO_BUTTON_2_TEXT: '在Bilibili上关注', // 英雄区按钮
   STARTER_HERO_BUTTON_2_URL: 'https://space.bilibili.com/22993364?spm_id_from=333.337.search-card.all.click', // 英雄区按钮
   STARTER_HERO_BUTTON_2_ICON: '/images/starter/bilibili.svg', // 英雄区按钮2的图标，不需要则留空 /images/starter/github.svg
 
-  STARTER_HERO_PREVIEW_IMAGE: '/images/starter/hero/hero-image.webp', // 产品预览图 ，默认读取public目录下图片
+  STARTER_HERO_BACKGROUND_IMAGE: '/images/starter/hero/bg.jpg', // 英雄区背景图片
+  STARTER_HERO_PREVIEW_IMAGE: '', //'/images/starter/hero/hero-image.webp', // 产品预览图 ，默认读取public目录下图片
 
   // 顶部右侧导航暗流
-  STARTER_NAV_BUTTON_1_TEXT: 'Sign In',//    Sign In
-  STARTER_NAV_BUTTON_1_URL: '/sign-in',//    /sign-in
+  STARTER_NAV_BUTTON_1_TEXT: '',//    Sign In
+  STARTER_NAV_BUTTON_1_URL: '',//    /sign-in
 
-  STARTER_NAV_BUTTON_2_TEXT: 'Sign Up',//    Sign Up
-  STARTER_NAV_BUTTON_2_URL: '/sign-up',//     /sign-up
+  STARTER_NAV_BUTTON_2_TEXT: '',//    Sign Up
+  STARTER_NAV_BUTTON_2_URL: '',//     /sign-up
 
   // 特性区块(分组介绍)
   STARTER_FEATURE_ENABLE: true, // 特性区块开关
@@ -284,7 +287,7 @@ const CONFIG = {
   //   STARTER_CONTACT_MSG_THANKS: '感谢您的留言',
 
   // 合作伙伴的图标
-  STARTER_BRANDS_ENABLE: true, // 合作伙伴开关
+  STARTER_BRANDS_ENABLE: false, // 合作伙伴开关
   STARTER_BRANDS: [
     {
       IMAGE: '/images/starter/brands/shenXY-web.png',
@@ -305,32 +308,48 @@ const CONFIG = {
   // 页脚三列菜单组
   STARTER_FOOTER_LINK_GROUP: [
     {
-      TITLE: '关于我们',
+      TITLE: '技术分享',
       LINK_GROUP: [
-        { TITLE: '官方主页', URL: '/#home' },
-      ]
-    },
-    {
-      TITLE: '功能特性',
-      LINK_GROUP: [
+        { TITLE: '英雄机器人', URL: '/英雄机器人' },
+        { TITLE: '工程机器人', URL: '/工程机器人' },
+        { TITLE: '步兵机器人', URL: '/步兵机器人' },
+        { TITLE: '哨兵机器人', URL: '/哨兵机器人' },
+        { TITLE: '空中机器人', URL: '/空中机器人' },
+        { TITLE: '飞镖系统', URL: '/飞镖系统' },
+        { TITLE: '雷达系统', URL: '/雷达系统' }
 
       ]
     },
     {
-
+      TITLE: '合作交流',
+      LINK_GROUP: [
+        { TITLE: '历任队员', URL: '/#' },
+        { TITLE: '现任队员', URL: '/#' },
+        { TITLE: '战队文化', URL: '/#' },
+        { TITLE: '队伍组成', URL: '/#' },
+        { TITLE: '建队历史', URL: '/#' }
+      ]
+    },
+    {
+      TITLE: '其他',
+      LINK_GROUP: [
+        { TITLE: '成果展示', URL: '/#' },
+        { TITLE: '队伍概况', URL: '/#' },
+        { TITLE: '分组介绍', URL: '/#' }
+      ]
     }
   ],
 
-  STARTER_FOOTER_BLOG_LATEST_TITLE: '最新文章',
+  STARTER_FOOTER_BLOG_LATEST_TITLE: '联系我们',
 
   STARTER_FOOTER_PRIVACY_POLICY_TEXT: '隐私政策',
-  STARTER_FOOTER_PRIVACY_POLICY_URL: '/privacy-policy',
+  STARTER_FOOTER_PRIVACY_POLICY_URL: '',
 
   STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_TEXT: '法律声明',
-  STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_URL: '/legacy-notice',
+  STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_URL: '',
 
   STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_TEXT: '服务协议',
-  STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_URL: '/terms-of-use',
+  STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_URL: '',
 
   // 404页面的提示语
   STARTER_404_TITLE: '我们似乎找不到您要找的页面。',

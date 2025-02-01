@@ -8,7 +8,7 @@ export const Hero = () => {
   const image = siteConfig('STARTER_HERO_IMAGES')?.[0] || '';
   return (
     <>
-      {/* <!-- ====== Hero Section Start --> */}
+      {/* <!-- ====== Hero Section Start --> */}    
       <div
         id='home'
         className='relative overflow-hidden pt-[120px] md:pt-[130px] lg:pt-[160px]'>
