@@ -301,6 +301,12 @@ const CONFIG = {
       URL: 'http://happyad.top/',
       TITLE: 'lineicons'
     },
+    {
+      IMAGE: '/images/starter/brands/kh-web.webp',
+      IMAGE_WHITE: '/images/starter/brands/kh-web.webp',
+      URL: 'andykong.top',
+      TITLE: 'lineicons'
+    },
   ],
 
   STARTER_FOOTER_SLOGAN: '长空御风，为战而生。',
